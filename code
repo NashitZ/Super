@@ -1,0 +1,43 @@
+class Person:
+    def __init__(self,id,first_name,last_name,birthay):
+        self.id=id
+        self.first_name=first_name
+        self.last_name=last_name
+        self.birthday=birthday
+    
+    def print_info(self):
+        print("Bienvenido ")
+
+from person import Person
+class Superhero(Person):
+    def __init__(self,id,first_name,last_name,birthay,alias,superpower):
+        super().__init__(id,first_name,last_name,birthay)
+        self.alias=alias
+        self.superpower=superpower
+    
+    def print_info(self):
+        print("Binvenido ")
+        
+    
+from person import Person
+
+print("\t\tBienvenido(a) ingrese una opcion")
+print("1. Persona normal")
+print("2. Superheroe")
+opcion=input()
+
+first_name=input("ingrese su nombre:")
+last_name=input("ingrese su apellido")
+birthday=input("ingrese su fecha de nacimiento")
+
+if (opcion=='1'):
+    person_1=Person(id,first_name,last_name,birthay)
+
+
+if(opcion=='2'):
+    from superhero import Superhero(Person)
+    alias=print("ingrese su alias: ")
+    superpower=print("ingrese su super poder: ")
+
+
+
